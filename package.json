@@ -75,7 +75,7 @@
     "reflect-metadata": "^0.1.13",
     "request": "^2.88.0",
     "roboto-fontface": "^0.10.0",
-    "sequelize": "^3.34.0",
+    "sequelize": "^5.15.1",
     "sequelize-cli": "^5.4.0",
     "sequelize-typescript": "^0.6.9",
     "theaterjs": "^3.2.0",
