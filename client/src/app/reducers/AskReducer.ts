@@ -10,6 +10,21 @@ export type InitialStateType = {
         error?: string;
     };
     query: string;
+    episode?: {
+        title: string;
+        link: string;
+        summary: string;
+        uuid: string;
+    };
+    podcast?: {
+        author: string;
+        category: string;
+        description: string;
+        image: {
+            href: string;
+        };
+        title: string;
+    };
     shortAnswer: string;
     longAnswer: string;
 };
@@ -61,11 +76,32 @@ const AppReducer = (state = InitialState, action: any) => {
                 },
                 success: (prevState: InitialStateType) => {
                     const askQuestionResponse: AskQuestionResponse = payload;
-                    const { success, shortAnswer, longAnswer } = askQuestionResponse;
+                    const {
+                        success,
+                        shortAnswer,
+                        longAnswer,
+                        episode,
+                        podcast,
+                    } = askQuestionResponse;
 
                     if (success) {
+                        // @ts-ignore
+                        const json = podcast.image.replace(/'/g, '"').replace('None', '""');
+
+                        const imageObj = JSON.parse(json);
+
                         return {
                             ...prevState,
+                            episode,
+                            podcast: {
+                                title: podcast.title,
+                                author: podcast.author,
+                                category: podcast.category,
+                                image: {
+                                    href: imageObj.href,
+                                },
+                                description: podcast.description,
+                            },
                             shortAnswer,
                             longAnswer,
                         };

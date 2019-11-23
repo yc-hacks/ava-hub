@@ -1,7 +1,21 @@
 export type AskQuestionResponse = {
     success: boolean;
     error?: string;
-    title: string;
+    episode: {
+        title: string;
+        link: string;
+        summary: string;
+        uuid: string;
+    };
+    podcast: {
+        author: string;
+        category: string;
+        description: string;
+        image: {
+            href: string;
+        };
+        title: string;
+    };
     shortAnswer: string;
     longAnswer: string;
 };

@@ -7,6 +7,7 @@ import { Button, Header } from 'semantic-ui-react';
 import { askQuestion, setQuestionValue } from '../../actions';
 import { InitialStateType as AskReducerType } from '../../reducers/AskReducer';
 import Answer from './answer';
+import Podcast from './podcast';
 import './styles.scss';
 
 export type PublicProps = {};
@@ -39,6 +40,8 @@ class AskPage extends React.Component<Props, State> {
                 query,
                 shortAnswer,
                 longAnswer,
+                podcast,
+                episode,
             },
         } = this.props;
         const loadingNodes = (
@@ -66,9 +69,27 @@ class AskPage extends React.Component<Props, State> {
                             shortAnswer={shortAnswer}
                             longAnswer={longAnswer}
                         />
-                        <Button className="ask-new-question" primary onClick={this.newQuestion}>
-                            New Question
-                        </Button>
+                        <Podcast podcast={podcast} episode={episode} />
+                        {podcast != undefined ? (
+                            <div>
+                                <Button
+                                    className="ask-new-question"
+                                    primary
+                                    onClick={this.newQuestion}
+                                >
+                                    New Question
+                                </Button>
+                                <Button
+                                    className="ask-new-question"
+                                    secondary
+                                    onClick={this.newQuestion}
+                                >
+                                    Ask {podcast.author} Another Question
+                                </Button>
+                            </div>
+                        ) : (
+                            ''
+                        )}
                     </div>
                 )}
             </div>
