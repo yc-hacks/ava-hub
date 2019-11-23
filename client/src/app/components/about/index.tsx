@@ -27,12 +27,12 @@ class About extends React.Component<Props, State> {
 
         theater
             .addActor('ava', { accuracy: 0.9, speed: 1.1 })
-            .addActor('malcom', { accuracy: 0.8, speed: 1.25 });
+            .addActor('malcom', { accuracy: 0.8, speed: 1.1 });
 
         theater
-            .addScene('ava:Hello there! My name is Ava.', 600)
+            .addScene('ava:Hello there! My name is Ava.', 1500)
             .addScene(
-                "ava:I'm here to connect you with all your favorite podcasters!",
+                "ava:I'm here to connect you with all your favorite podcasters so you can ask them anything you want!",
                 500,
                 ' Let me show you.',
                 900,
@@ -45,7 +45,9 @@ class About extends React.Component<Props, State> {
                 "malcom:Throughout the 1960s, a biologist named Howard Temin became convinced that something wasn’t right in science’s understanding of viruses. His colleagues dismissed him as a heretic. He turned out to be right — and you're alive today as a result. ",
                 4000,
             )
-            .addScene('ava:Thanks! Try it out for yourself on the homepage!', 1500)
+            .addScene('ava:Wow thanks, Malcom!', 1500)
+            .addScene('malcom: Anytime.', 200)
+            .addScene('ava:Try it out for yourself on the homepage!', 1500)
             .addScene(theater.replay);
     }
 
