@@ -1,15 +1,17 @@
 import { Box } from '@material-ui/core';
 import * as React from 'react';
 import { connect } from 'react-redux';
-import { RouteComponentProps } from 'react-router-dom';
+import { RouteComponentProps, withRouter } from 'react-router-dom';
 import { ThunkDispatch } from 'redux-thunk';
-import { Input } from 'semantic-ui-react';
-import { uppdateHomeSearchBox } from '../../actions';
+import { Form, FormProps, Input } from 'semantic-ui-react';
+import { updateHomeSearchBox } from '../../actions';
+import { InitialStateType as HomeReducerState } from '../../reducers/AppReducer';
 import './styles.scss';
 
 export type PublicProps = {};
 
 export type ReduxProps = {
+    home: HomeReducerState;
     updateHomeSearchBox: (query: string) => void;
 };
 
@@ -20,6 +22,17 @@ export type Props = PublicProps & ReduxProps & RouteComponentProps;
 class HomePage extends React.Component<Props, State> {
     searchUpdated = (event) => {
         this.props.updateHomeSearchBox(event.target.value);
+    };
+
+    onSubmit = (event: React.FormEvent<HTMLFormElement>, data: FormProps) => {
+        const {
+            home: { homeSearch },
+            history,
+        } = this.props;
+        history.push({
+            pathname: '/ask',
+            search: `?question=${encodeURI(homeSearch)}`,
+        });
     };
 
     render() {
@@ -33,7 +46,17 @@ class HomePage extends React.Component<Props, State> {
                         Ask your favorite podcasters anything.
                     </Box>
 
-                    <Input action="Search" placeholder="Search..." />
+                    <div className="home-content-form">
+                        <Form size="small" onSubmit={this.onSubmit}>
+                            <Form.Field>
+                                <Input
+                                    action="Search"
+                                    placeholder="Ask me anything"
+                                    onChange={this.searchUpdated}
+                                />
+                            </Form.Field>
+                        </Form>
+                    </div>
                 </div>
 
                 <div className="home-background">
@@ -48,16 +71,20 @@ class HomePage extends React.Component<Props, State> {
 }
 
 function mapStateToProps(state: any) {
-    return {};
+    return {
+        home: state.app,
+    };
 }
 
 function mapDispatchToProps(dispatch: ThunkDispatch<{}, {}, any>) {
     return {
-        updateHomeSearchBox: (query: string) => dispatch(uppdateHomeSearchBox(query)),
+        updateHomeSearchBox: (query: string) => dispatch(updateHomeSearchBox(query)),
     };
 }
+
+const HomePageWithRouter = withRouter(HomePage);
 
 export default (connect(
     mapStateToProps,
     mapDispatchToProps,
-)(HomePage) as any) as React.ComponentClass<PublicProps>;
+)(HomePageWithRouter) as any) as React.ComponentClass<PublicProps>;

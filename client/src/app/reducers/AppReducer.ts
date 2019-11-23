@@ -2,22 +2,21 @@
 import * as types from '../constants/ReduxActions';
 
 export type InitialStateType = {
-    someStateValue: boolean;
+    homeSearch: string;
 };
 
 export const InitialState: InitialStateType = {
-    someStateValue: false,
+    homeSearch: '',
 };
 
 const AppReducer = (state = InitialState, action: any) => {
-    const { type, payload } = action;
-    console.log('Payload:', payload);
+    const { type } = action;
 
     switch (type) {
-        case types.TEST_ACTION:
+        case types.UPDATE_HOME_SEARCH_BOX:
             return {
                 ...state,
-                someStateValue: !state.someStateValue,
+                homeSearch: action.query,
             };
 
         default:

@@ -146,6 +146,7 @@ module.exports = {
         // API Configuration
         new webpack.DefinePlugin({
             SERVER_BASE_URL: isProduction ? '"/api/"' : '"http://localhost:5000/api/"',
+            MODEL_SERVER_BASE_URL: '"http://ec2-54-86-61-234.compute-1.amazonaws.com"',
         }),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({

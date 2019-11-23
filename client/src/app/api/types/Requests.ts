@@ -1,3 +1,3 @@
-export type ExampleRequest = {
-    id: string;
+export type AskQuestionRequest = {
+    question: string;
 };

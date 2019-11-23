@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Route, RouteComponentProps, Switch, withRouter } from 'react-router';
 import { InitialStateType as AppPropTypes } from '../../reducers/AppReducer';
 import About from '../about';
+import Ask from '../ask';
 import Home from '../home';
 import './styles.scss';
 
@@ -18,6 +19,7 @@ class AppPageComponent extends React.Component<Props, State> {
         return (
             <div className="page-content">
                 <Switch>
+                    <Route path="/ask" render={() => <Ask />} />
                     <Route path="/about" render={() => <About />} />
                     <Route path="/" render={() => <Home />} />
                 </Switch>
