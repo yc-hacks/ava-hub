@@ -1,5 +1,4 @@
 import * as express from 'express';
-import security from './config/security';
 import initialize from './models';
 import routes from './routes';
 
@@ -34,7 +33,7 @@ app.all('*', (req: express.Request, res: express.Response, next: express.NextFun
 });
 
 // Setup authentication and security
-security(app);
+// security(app);
 initialize();
 
 // Log requests to the console.
