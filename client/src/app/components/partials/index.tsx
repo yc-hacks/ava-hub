@@ -14,6 +14,13 @@ function NavigationBar({ app, location: routeLocation }: Props) {
     return (
         <div className="headerMenu">
             <Link to="/">Ask</Link>
+            <a
+                href="https://devpost.com/software/ava-69yuo1"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Devpost
+            </a>
             <Link to="/about">About</Link>
             <Link to="/profile">Profile</Link>
         </div>
