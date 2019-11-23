@@ -1,5 +1,7 @@
 import { Sequelize } from 'sequelize-typescript';
-import User from './user';
+import Episode from './episode';
+import Genre from './genre';
+import Podcast from './podcast';
 
 import logger = require('heroku-logger'); // For logging to the log heroku log file
 
@@ -47,7 +49,7 @@ export default (): void => {
         }); // Connect
     }
 
-    sequelize.addModels([User]);
+    sequelize.addModels([Podcast, Episode, Genre]);
     // if (process.env.NODE_ENV == 'production') {
     //     sequelize.sync(); // Don't corrupt production data
     // } else {
