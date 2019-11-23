@@ -1,0 +1,14 @@
+.header {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    z-index: 2;
+    display: flex;
+    width: 200px;
+    align-content: space-between;
+    justify-content: space-around;
+
+    a {
+        color: #5c5d5d;
+    }
+}
