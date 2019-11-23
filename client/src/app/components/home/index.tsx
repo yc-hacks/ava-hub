@@ -1,8 +1,9 @@
-import { Box, Button, TextField } from '@material-ui/core';
+import { Box } from '@material-ui/core';
 import * as React from 'react';
 import { connect } from 'react-redux';
 import { RouteComponentProps } from 'react-router-dom';
 import { ThunkDispatch } from 'redux-thunk';
+import { Input } from 'semantic-ui-react';
 import { uppdateHomeSearchBox } from '../../actions';
 import './styles.scss';
 
@@ -32,18 +33,7 @@ class HomePage extends React.Component<Props, State> {
                         Ask your favorite podcasters anything.
                     </Box>
 
-                    <TextField
-                        id="outlined-search"
-                        label="Search field"
-                        type="search"
-                        margin="normal"
-                        variant="outlined"
-                        onChange={this.searchUpdated}
-                    />
-                    <br />
-                    <Button variant="contained" color="primary">
-                        Ask
-                    </Button>
+                    <Input action="Search" placeholder="Search..." />
                 </div>
 
                 <div className="home-background">

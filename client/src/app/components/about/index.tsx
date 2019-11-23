@@ -7,14 +7,14 @@ type State = {};
 
 export type Props = PublicProps;
 
-class PageOne extends React.Component<Props, State> {
+class About extends React.Component<Props, State> {
     render() {
         return (
-            <div>
-                <Header as="h1">Page One</Header>
+            <div className="page-content-normal">
+                <Header as="h1">About</Header>
             </div>
         );
     }
 }
 
-export default PageOne;
+export default About;

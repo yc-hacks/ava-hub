@@ -6,5 +6,9 @@ body {
 .page {
     &-content {
         padding: none;
+
+        &-normal {
+            padding: 30px 18px;
+        }
     }
 }

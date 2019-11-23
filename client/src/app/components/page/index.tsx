@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { Route, RouteComponentProps, Switch, withRouter } from 'react-router';
 import { InitialStateType as AppPropTypes } from '../../reducers/AppReducer';
+import About from '../about';
 import Home from '../home';
-import PageOne from '../page1';
 import './styles.scss';
 
 export type PublicProps = {
@@ -18,7 +18,7 @@ class AppPageComponent extends React.Component<Props, State> {
         return (
             <div className="page-content">
                 <Switch>
-                    <Route path="/page1" render={() => <PageOne />} />
+                    <Route path="/about" render={() => <About />} />
                     <Route path="/" render={() => <Home />} />
                 </Switch>
             </div>
