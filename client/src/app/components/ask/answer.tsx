@@ -1,9 +1,23 @@
 import * as React from 'react';
 
 export type PublicProps = {
-    title: string;
     shortAnswer: string;
     longAnswer: string;
+    episode?: {
+        title: string;
+        link: string;
+        summary: string;
+        uuid: string;
+    };
+    podcast?: {
+        author: string;
+        category: string;
+        description: string;
+        image: {
+            href: string;
+        };
+        title: string;
+    };
 };
 
 export type Props = PublicProps;
@@ -12,10 +26,10 @@ type State = {};
 
 class Answer extends React.Component<Props, State> {
     render() {
-        const { title, shortAnswer, longAnswer } = this.props;
+        const { episode, podcast, shortAnswer, longAnswer } = this.props;
         return (
             <div className="ask-answer">
-                {title && title.length != 0 ? title : ''}
+                {podcast != undefined ? `${podcast.author} says:` : ''}
                 <p className="ask-answer-short">{shortAnswer}</p>
                 <p className="ask-answer-quote">{longAnswer}</p>
             </div>

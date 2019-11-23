@@ -65,13 +65,14 @@ class AskPage extends React.Component<Props, State> {
                 ) : (
                     <div className="ask-answer-container">
                         <Answer
-                            title={'Something'}
+                            podcast={podcast}
+                            episode={episode}
                             shortAnswer={shortAnswer}
                             longAnswer={longAnswer}
                         />
                         <Podcast podcast={podcast} episode={episode} />
                         {podcast != undefined ? (
-                            <div>
+                            <div className="ask-actions">
                                 <Button
                                     className="ask-new-question"
                                     primary

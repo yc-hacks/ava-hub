@@ -39,7 +39,7 @@ class Podcast extends React.Component<Props, State> {
         const { title: episodeTitle, summary, link } = episode;
 
         return (
-            <div>
+            <div className="ask-podcast">
                 <Card style={{ margin: 'auto' }}>
                     <Image src={href} wrapped ui={false} />
                     <Card.Content>
@@ -51,7 +51,7 @@ class Podcast extends React.Component<Props, State> {
                     </Card.Content>
                     <Card.Content extra>
                         <Icon name="user" />
-                        {category} —
+                        {category} —{' '}
                         <a href={link} target="_blank" rel="noopener noreferrer">
                             Listen
                         </a>

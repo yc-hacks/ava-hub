@@ -56,8 +56,8 @@ class HomePage extends React.Component<Props, State> {
                         <Form size="small" onSubmit={this.onSubmit}>
                             <Form.Field>
                                 <Input
-                                    action="Search"
-                                    placeholder="Ask me anything"
+                                    action="Ask"
+                                    placeholder="What is metaphysics?"
                                     onChange={this.searchUpdated}
                                 />
                             </Form.Field>
