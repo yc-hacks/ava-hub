@@ -21,7 +21,7 @@ class Host {
             .join('&');
     }
 
-    fire(resource: string, type: RequestType, payload?: any) {
+    fire(resource: string, type: RequestType, payload?: any, sameOrigin?: boolean) {
         // Need the 'credentials' field to be set to set a cookie
         // Will set cookie 'set-cookie' only if this is set to 'same-origin' if in production because on same domain
         // In development, using two different localhosts so use 'include'
@@ -69,7 +69,7 @@ class Host {
                     fetch(url.toString(), {
                         method: type,
                         mode: 'cors',
-                        credentials: 'omit', // omit for cross origin
+                        credentials: sameOrigin ? 'omit' : 'same-origin', // omit for cross origin
                     })
                         .then((res) => res.json())
                         .then((json) => resolve(json))
