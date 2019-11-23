@@ -1,4 +1,12 @@
-# React Express Boilerplate
+# Ava Hub
+
+Ask Ava client, server, and database.
+
+
+
+<img src="./animated-logo.svg" width="400" align="center">
+
+
 
 ## Test User
 ``` sql

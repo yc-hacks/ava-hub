@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500px" height="500px" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="50%" cy="50%" fx="50%" fy="50%" r="50%" gradientTransform="translate(0.500000,0.500000),scale(0.980832,1.000000),rotate(90.000000),translate(-0.500000,-0.500000)" id="radialGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.875923852" offset="85.1012146%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </radialGradient>
+        <linearGradient x1="68.9367943%" y1="105.716196%" x2="44.950679%" y2="31.6639944%" id="linearGradient-2">
+            <stop stop-color="#0B29D3" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#0034C0" stop-opacity="0.460654438" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="68.9367943%" y1="105.716196%" x2="44.4739946%" y2="30.1923294%" id="linearGradient-3">
+            <stop stop-color="#0B29D3" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#0034C0" stop-opacity="0.460654438" offset="98.0513909%"></stop>
+        </linearGradient>
+        <linearGradient x1="68.9367943%" y1="105.716196%" x2="44.950679%" y2="31.6639944%" id="linearGradient-4">
+            <stop stop-color="#0027FF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#0046FF" stop-opacity="0.634482563" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="6.93752436%" y1="100%" x2="78.5311746%" y2="173.650962%" id="linearGradient-5">
+            <stop stop-color="#3F005A" stop-opacity="0.199360281" offset="0%"></stop>
+            <stop stop-color="#AA00DA" stop-opacity="0.413609601" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="82.8142403%" y1="46.8543287%" x2="1.96337463%" y2="56.005835%" id="linearGradient-6">
+            <stop stop-color="#0027FF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#0034C0" stop-opacity="0.460654438" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path class="blob1" d="M242.5,414.675657 C343.291967,414.675657 425,326.992977 425,232 C425,220.482091 426.89833,195.744857 425,184.753635 C411.242014,105.09568 346.262253,55.8446081 257.691323,55.8446081 C156.899356,55.8446081 60,137.007023 60,232 C60,266.169724 64.463115,322.69002 82.6927991,351.227255 C115.142247,402.024489 177.9637,414.675657 242.5,414.675657 Z" id="Oval" fill="url(#radialGradient-1)"></path>
+        <path class="blob2" d="M308.246094,250 C404.895925,250 425,324.649831 425,228 C425,131.350169 346.649831,53 250,53 C153.350169,53 68.9765625,115.496094 45.765625,228 C22.5546875,340.503906 211.596263,250 308.246094,250 Z" id="blue" fill="url(#linearGradient-2)"></path>
+        <path class="blob3" d="M276.796875,421.730469 C373.446706,421.730469 434.347656,294.431081 434.347656,197.78125 C434.347656,101.131419 332.345144,53 235.695313,53 C139.045481,53 66,215.486888 66,312.136719 C66,408.78655 180.147044,421.730469 276.796875,421.730469 Z" id="blue" fill="url(#linearGradient-3)"></path>
+        <path class="blob4" d="M317.820312,143.730469 C414.470144,143.730469 425,324.649831 425,228 C425,131.350169 357.013112,98.1367188 260.363281,98.1367188 C163.71345,98.1367188 75,131.350169 75,228 C75,324.649831 221.170481,143.730469 317.820312,143.730469 Z" id="blue" fill="url(#linearGradient-3)"></path>
+        <path class="blob" d="M275.917969,199.707031 C372.5678,199.707031 469.390625,257.847656 415.265625,168.921875 C361.140625,79.9960938 346.649831,53 250,53 C153.350169,53 54.5546875,197.8697 54.5546875,294.519531 C54.5546875,391.169362 179.268138,199.707031 275.917969,199.707031 Z" id="blue" fill="url(#linearGradient-4)"></path>
+        <path class="blob3" d="M308.179688,168.089844 C404.829519,168.089844 435.832031,336.649831 435.832031,240 C435.832031,143.350169 357.481862,65 260.832031,65 C164.1822,65 65,143.350169 65,240 C65,336.649831 211.529856,168.089844 308.179688,168.089844 Z" id="red" fill="url(#linearGradient-5)"></path>
+        <path class="blob4" d="M239.121094,362.839844 C335.770925,362.839844 436.296875,345.257414 436.296875,248.607583 C436.296875,151.957752 228.886719,212.441406 175.453125,153.046875 C122.019531,93.6523438 47.3554688,182.193368 47.3554688,278.843199 C47.3554688,375.49303 142.471263,362.839844 239.121094,362.839844 Z" id="red" fill="url(#linearGradient-5)"></path>
+        <path class="blob1" d="M287.027344,407.710937 C414.492187,392.132812 432.09375,279.649831 432.09375,183 C432.09375,86.3501688 395.712331,200.894531 299.0625,200.894531 C202.412669,200.894531 68.9296875,165.615794 68.9296875,262.265625 C68.9296875,358.915456 159.5625,423.289062 287.027344,407.710937 Z" id="red" fill="url(#linearGradient-5)"></path>
+        <path class="blob2" d="M230.003906,409.804688 C326.653737,409.804688 425,324.649831 425,228 C425,131.350169 352.009206,284.414063 255.359375,284.414063 C158.709544,284.414063 75,131.350169 75,228 C75,324.649831 133.354075,409.804688 230.003906,409.804688 Z" id="red" fill="url(#linearGradient-5)"></path>
+        <path class="blob3" d="M244.695313,399.077028 C341.345144,399.077028 440.338197,337.850353 440.338197,241.200522 C440.338197,144.550691 328.778549,346.40407 232.128718,346.40407 C135.478887,346.40407 75,184.226707 75,280.876538 C75,377.52637 148.045481,399.077028 244.695313,399.077028 Z" id="blue" fill="url(#linearGradient-6)"></path>
+    </g>
+    <style>
+        @keyframes float {
+            0% {
+                box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+                transform: translatey(0px) rotate(0) scale(1.0);
+            }
+            50% {
+                box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+                transform: translatey(-10px) rotate(9deg)  scale(0.9);
+            }
+            100% {
+                box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+                transform: translatey(0px) rotate(0) scale(1);
+            }
+        }
+
+        @keyframes float2 {
+            0% {
+                box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+                transform: translatey(0px) rotate(5deg) scale(1.0);
+            }
+            50% {
+                box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+                transform: translatey(-12px) rotate(10deg)  scale(0.9);
+            }
+            100% {
+                box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+                transform: translatey(0px) rotate(5deg) scale(1.0);
+            }
+        }
+
+        @keyframes float5 {
+            0% {
+                box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+                transform: translatey(0px) rotate(0deg) scale(1.0);
+            }
+            50% {
+                box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+                transform: translatey(-8px) rotate(-10deg)  scale(0.9);
+            }
+            100% {
+                box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+                transform: translatey(0px) rotate(0) scale(1.0);
+            }
+        }
+
+        .blob1 {
+            transform-origin: center;
+            animation-fill-mode: forwards;
+            animation: float 9s ease-in-out infinite;
+        }
+
+        .blob2 {
+            transform-origin: center;
+            animation-fill-mode: forwards;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .blob3 {
+            transform-origin: center;
+            animation-fill-mode: forwards;
+            animation: float2 10s ease-in-out infinite;
+        }
+
+        .blob4 {
+            transform-origin: center;
+            animation-fill-mode: forwards;
+            animation: float2 12s ease-in-out infinite;
+        }
+    </style>
+</svg>
