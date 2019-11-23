@@ -7,6 +7,11 @@ export const updateHomeSearchBox = (query: string) => ({
     query,
 });
 
+export const setQuestionValue = (query: string) => ({
+    type: Actions.SET_QUESTION_VALUE,
+    query,
+});
+
 export const askQuestion = (question: string) => {
     const request: AskQuestionRequestType = {
         question,

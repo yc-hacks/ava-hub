@@ -1,0 +1,28 @@
+@keyframes blink {
+    0% {
+        color: rgba(0, 0, 0, 1);
+    }
+    50% {
+        color: rgba(0, 0, 0, 0);
+    }
+    100% {
+        color: rgba(0, 0, 0, 1);
+    }
+}
+
+.ask {
+    &-query {
+        text-align: center;
+        margin-top: 84px;
+    }
+
+    &-loading {
+        padding: 0 25%;
+
+        p {
+            text-align: center;
+            animation: blink 3s ease-in-out;
+            animation-iteration-count: infinite;
+        }
+    }
+}

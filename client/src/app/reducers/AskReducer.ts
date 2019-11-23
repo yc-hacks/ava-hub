@@ -81,6 +81,12 @@ const AppReducer = (state = InitialState, action: any) => {
                 },
             });
 
+        case types.SET_QUESTION_VALUE:
+            return {
+                ...state,
+                query: action.query,
+            };
+
         default:
             // Default, no state change
             return state;
