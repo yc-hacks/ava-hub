@@ -49,7 +49,7 @@ class HomePage extends React.Component<Props, State> {
                         Ava
                     </Box>
                     <Box textAlign="center" fontSize={30} color="#979797" lineHeight={3}>
-                        Ask your favorite podcasters anything.
+                        Rethinking the way you find podcasts.
                     </Box>
 
                     <div className="home-content-form">
