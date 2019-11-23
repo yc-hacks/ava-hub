@@ -65,6 +65,11 @@ class HomePage extends React.Component<Props, State> {
                         src={require('../../../assets/background.png')}
                     />
                 </div>
+
+                <div className="home-extensions">
+                    <img src={require('../../../assets/alexa.png')} />
+                    <img src={require('../../../assets/google-home.png')} />
+                </div>
             </div>
         );
     }

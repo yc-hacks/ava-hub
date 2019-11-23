@@ -25,7 +25,7 @@ class Host {
         // Need the 'credentials' field to be set to set a cookie
         // Will set cookie 'set-cookie' only if this is set to 'same-origin' if in production because on same domain
         // In development, using two different localhosts so use 'include'
-        const credentials = process.env.NODE_ENV == 'development' ? 'include' : 'same-origin';
+        // const credentials = process.env.NODE_ENV == 'development' ? 'include' : 'same-origin';
 
         switch (type) {
             case RequestType.POST:
@@ -68,7 +68,8 @@ class Host {
 
                     fetch(url.toString(), {
                         method: type,
-                        credentials, // Will set cookie 'set-cookie' only if this is set to 'same-origin'
+                        mode: 'cors',
+                        credentials: 'omit', // omit for cross origin
                     })
                         .then((res) => res.json())
                         .then((json) => resolve(json))

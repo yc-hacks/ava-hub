@@ -25,4 +25,18 @@
             object-position: bottom;
         }
     }
+
+    &-extensions {
+        position: absolute;
+        z-index: 2;
+        top: -12px;
+        left: 0;
+
+        img {
+            height: 100px;
+            width: 150px;
+            object-fit: contain;
+            object-position: center;
+        }
+    }
 }

@@ -1,15 +1,7 @@
 import * as React from 'react';
-// require('typeface-roboto');
-import WebFont from 'webfontloader';
 import { InitialStateType as AppPropTypes } from '../../reducers/AppReducer';
 import AppRouterComponent from '../page';
 import NavigationBar from '../partials';
-
-WebFont.load({
-    google: {
-        families: ['Roboto:300,400,500'],
-    },
-});
 
 export type PublicProps = {
     app: AppPropTypes;
