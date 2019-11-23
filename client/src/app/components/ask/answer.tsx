@@ -26,7 +26,7 @@ type State = {};
 
 class Answer extends React.Component<Props, State> {
     render() {
-        const { episode, podcast, shortAnswer, longAnswer } = this.props;
+        const { podcast, shortAnswer, longAnswer } = this.props;
         return (
             <div className="ask-answer">
                 {podcast != undefined ? `${podcast.author} says:` : ''}

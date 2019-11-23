@@ -30,9 +30,7 @@ class Podcast extends React.Component<Props, State> {
         if (podcast == undefined || episode == undefined) return <React.Fragment />;
 
         const {
-            author,
             category,
-            description,
             image: { href },
             title,
         } = podcast;
