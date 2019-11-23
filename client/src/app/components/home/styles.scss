@@ -1,6 +1,12 @@
 .home {
     position: relative;
 
+    &-name {
+        background: -webkit-linear-gradient(#6202ee, #0085ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
     &-content {
         position: absolute;
         width: 100%;

@@ -39,7 +39,13 @@ class HomePage extends React.Component<Props, State> {
         return (
             <div className="home">
                 <div className="home-content">
-                    <Box textAlign="center" fontSize={60} color="#2DB84B" lineHeight={1}>
+                    <Box
+                        textAlign="center"
+                        fontSize={60}
+                        color="#2DB84B"
+                        lineHeight={1}
+                        className="home-name"
+                    >
                         Ava
                     </Box>
                     <Box textAlign="center" fontSize={30} color="#979797" lineHeight={3}>

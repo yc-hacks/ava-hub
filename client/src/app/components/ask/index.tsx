@@ -53,7 +53,7 @@ class AskPage extends React.Component<Props, State> {
         return (
             <div className="page-content-normal">
                 <div className="ask-query">
-                    <Header as="h1">{this.props.ask.query}</Header>
+                    <Header as="h1">{query}</Header>
                 </div>
                 {isLoading ? (
                     loadingNodes

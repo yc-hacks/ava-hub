@@ -15,6 +15,7 @@ class Answer extends React.Component<Props, State> {
         const { title, shortAnswer, longAnswer } = this.props;
         return (
             <div className="ask-answer">
+                {title && title.length != 0 ? title : ''}
                 <p className="ask-answer-short">{shortAnswer}</p>
                 <p className="ask-answer-quote">{longAnswer}</p>
             </div>
