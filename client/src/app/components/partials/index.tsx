@@ -15,7 +15,7 @@ function NavigationBar({ app, location: routeLocation }: Props) {
         <div className="headerMenu">
             <Link to="/">Ask</Link>
             <Link to="/about">About</Link>
-            <Link to="/login">Login</Link>
+            <Link to="/profile">Profile</Link>
         </div>
     );
 }

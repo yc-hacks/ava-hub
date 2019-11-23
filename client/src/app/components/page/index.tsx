@@ -5,6 +5,7 @@ import About from '../about';
 import Ask from '../ask';
 import Home from '../home';
 import Login from '../login';
+import Profile from '../profile';
 import './styles.scss';
 
 export type PublicProps = {
@@ -23,6 +24,7 @@ class AppPageComponent extends React.Component<Props, State> {
                     <Route path="/ask" render={() => <Ask />} />
                     <Route path="/about" render={() => <About />} />
                     <Route path="/login" render={() => <Login />} />
+                    <Route path="/profile" render={() => <Profile />} />
                     <Route path="/" render={() => <Home />} />
                 </Switch>
             </div>
