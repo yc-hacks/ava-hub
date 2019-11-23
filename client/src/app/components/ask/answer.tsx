@@ -31,7 +31,7 @@ class Answer extends React.Component<Props, State> {
             <div className="ask-answer">
                 {podcast != undefined ? `${podcast.author} says:` : ''}
                 <p className="ask-answer-short">{shortAnswer}</p>
-                <p className="ask-answer-quote">{longAnswer}</p>
+                <i className="ask-answer-quote">{longAnswer}</i>
             </div>
         );
     }

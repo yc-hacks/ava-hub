@@ -1,6 +1,8 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
 import { RouteComponentProps, withRouter } from 'react-router-dom';
+import RadarChart from 'react-svg-radar-chart';
+import 'react-svg-radar-chart/build/css/index.css';
 import { ThunkDispatch } from 'redux-thunk';
 import { Card, Header, Image } from 'semantic-ui-react';
 import { toggleSelectPodcast } from '../../actions/profile';
@@ -25,6 +27,27 @@ class Profile extends React.Component<Props, State> {
         const {
             profile: { topPodcasts },
         } = this.props;
+        const data = [
+            {
+                data: {
+                    philosophy: 0.7,
+                    design: 0.8,
+                    sports: 0.9,
+                    travel: 0.67,
+                    news: 0.8,
+                },
+                meta: { color: 'blue' },
+            },
+        ];
+
+        const captions = {
+            // columns
+            philosophy: 'Philosphy',
+            design: 'Design',
+            sports: 'Sports',
+            travel: 'Travel',
+            news: 'News',
+        };
         const podcastCardNodes = topPodcasts.map((podcast) => (
             <PodcastCard
                 key={podcast.id}
@@ -42,6 +65,7 @@ class Profile extends React.Component<Props, State> {
                     Select From Top Podcasters
                 </Header>
                 <Card.Group>{podcastCardNodes}</Card.Group>
+                <RadarChart captions={captions} data={data} size={450} />
             </div>
         );
     }
