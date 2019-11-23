@@ -6,11 +6,11 @@ import { ThunkDispatch } from 'redux-thunk';
 import { uppdateHomeSearchBox } from '../../actions';
 import './styles.scss';
 
-export type PublicProps = {
+export type PublicProps = {};
+
+export type ReduxProps = {
     updateHomeSearchBox: (query: string) => void;
 };
-
-export type ReduxProps = {};
 
 type State = {};
 
