@@ -71,7 +71,15 @@ class AskPage extends React.Component<Props, State> {
                 {isLoading ? (
                     loadingNodes
                 ) : didError ? (
-                    <p>{error}</p>
+                    <Message negative>
+                        <Message.Header>
+                            We&#39;re sorry, we couldn&#39;t get an answer for you this time.
+                        </Message.Header>
+                        <p>
+                            Our server has likely been shut off. We&#39;ll be back up and running as
+                            soon as possible.
+                        </p>
+                    </Message>
                 ) : (
                     <div className="ask-answer-container">
                         <Answer
