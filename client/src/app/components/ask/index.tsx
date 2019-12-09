@@ -3,7 +3,7 @@ import * as React from 'react';
 import { connect } from 'react-redux';
 import { RouteComponentProps, withRouter } from 'react-router-dom';
 import { ThunkDispatch } from 'redux-thunk';
-import { Button, Header } from 'semantic-ui-react';
+import { Button, Header, Message } from 'semantic-ui-react';
 import { askQuestion, setQuestionValue } from '../../actions';
 import { InitialStateType as AskReducerType } from '../../reducers/AskReducer';
 import Answer from './answer';
@@ -55,6 +55,16 @@ class AskPage extends React.Component<Props, State> {
         );
         return (
             <div className="page-content-normal">
+                <Message warning style={{ marginTop: 24 }}>
+                    <Message.Header>
+                        Disclaimer: These results are experimental and depend on a limited number of
+                        podcasts that our model trained on during the YC Hackathon.
+                    </Message.Header>
+                    <p>
+                        Due to the limited subset of training podcasts, Ask Ava doesn’t have
+                        relevant answers for every question. Try &#34;What is Metaphysics?&#34;
+                    </p>
+                </Message>
                 <div className="ask-query">
                     <Header as="h1">{query}</Header>
                 </div>
