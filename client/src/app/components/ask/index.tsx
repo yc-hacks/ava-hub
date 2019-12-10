@@ -36,7 +36,7 @@ class AskPage extends React.Component<Props, State> {
     render() {
         const {
             ask: {
-                searchRequest: { isLoading, didError, error },
+                searchRequest: { isLoading, didError },
                 query,
                 shortAnswer,
                 longAnswer,
